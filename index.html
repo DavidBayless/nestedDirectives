@@ -19,5 +19,10 @@
 <!-- Change Me -->
 <body ng-controller='nestedController as NC'>
   {{NC.title}}
+  <todo-parent>
+    <h2>Do All The Things!!!</h2>
+    <button>More Things!</button>
+    <todo-child ng-repeat='todo in tp.list track by $index'>{{$index}}</todo-child>
+  </todo-parent>
 </body>
 </html>

@@ -3,5 +3,5 @@ app.controller('nestedController', [nestedController]);
 
 function nestedController() {
   var vm = this;
-  vm.title = 'Angular Template'
+  vm.title = 'Angular Template';
 }
