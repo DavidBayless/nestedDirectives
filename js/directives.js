@@ -12,13 +12,22 @@ function todoParent() {
       };
 
       vm.deletePost = function(event) {
-        event.target.parentNode.removeChild(event.target);
+        // event.target.parentNode.parentNode.remove(event.target.parentNode);
+        // vm.list.splice(vm.list.indexOf(event));
+        vm.list.pop();
+        $scope.$apply();
       };
     }],
+    // transclude: true,
+    templateUrl: '../views/todoParent.html',
+    scope: {
+      newTodo: '='
+    },
     controllerAs: 'tp',
     // template: '<div><h2>Do All The Things</h2></div>',
     require: 'todoParent',
     link: function(scope, element, attrs, ctrl) {
+      console.log(element);
       element.find('button').on('click', function(event) {
         ctrl.addPost();
       });
