@@ -1,2 +1,2 @@
-var app = angular.module('TemplateApp', ['ngRoute']);
+var app = angular.module('nestedApp', ['ngRoute']);
 // Change Me

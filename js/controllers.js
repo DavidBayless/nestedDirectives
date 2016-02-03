@@ -1,7 +1,7 @@
-app.controller('TemplateController', [TemplateController]);
+app.controller('nestedController', [nestedController]);
 // Change Me
 
-function TemplateController() {
+function nestedController() {
   var vm = this;
   vm.title = 'Angular Template'
 }
